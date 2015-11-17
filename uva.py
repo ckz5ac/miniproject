@@ -1,4 +1,7 @@
-name = "Ball Game"
+import runWorld as rw
+import drawWorld as dw
+
+name = "UVA"
 width = 1000
 height = 1000
 rw.newDisplay(width, height, name)
