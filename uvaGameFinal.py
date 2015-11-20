@@ -12,9 +12,11 @@ initState = (0,1)
 myimage = dw.loadImage("uva.png")
 
 mylabel = dw.makeLabel("Go Hoos!", "arial", 100, (0,0,255))
+otherlabel = dw.makeLabel("Don't lose the Hoos", "serif", 80, (255,255,255))
 
 def updateDisplay(state):
     dw.fill(dw.blue)
+    dw.draw(otherlabel, (150,100))
     dw.draw(myimage, (state[0], width/50))
     dw.draw(mylabel, (250,250))
 
@@ -40,7 +42,7 @@ def handleEvent(state,event):
     else:
         return(state)
 
-frameRate = 350
+frameRate = 375
 initState = (0,1)
 
 
